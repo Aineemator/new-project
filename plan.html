@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>House Plan</title>
+<style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    
+    background:#cc9d73;
+    color:white;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 0;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+.card{
+    background:#11181d;
+    border-radius:20px;
+    overflow:hidden;
+    margin:40px 0;
+}
+
+/* HERO */
+
+.hero{
+    height:700px;
+    background:url("house.jpg");
+    background-size:cover;
+    background-position:center;
+    position:relative;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.35);
+    
+    background-image: url('assests/8im.jpg');
+    background-size: cover; 
+    
+}
+
+.hero-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    color: rgb(206, 123, 21);
+}
+
+.hero-content h1{
+    font-size:90px;
+    letter-spacing:5px;
+}
+
+.hero-content p{
+    font-size:24px;
+    margin-top:15px;
+}
+
+/* SERVICES */
+
+.services{
+    padding:60px;
+}
+
+.services h2{
+    font-size:60px;
+    margin-bottom:40px;
+}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.service{
+    background:#1c242b;
+    padding:15px;
+    border-radius:15px;
+}
+
+.service img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.service h3{
+    font-size:40px;
+    margin-top:15px;
+}
+
+.service p{
+    color:#ccc;
+    margin-top:10px;
+}
+
+/* PLAN */
+
+.plan{
+    padding:60px;
+}
+
+.plan-wrapper{
+    display:flex;
+    gap:50px;
+    align-items:center;
+}
+
+.plan-text{
+    flex:1;
+}
+
+.plan-img{
+    flex:1;
+}
+
+.plan-img img{
+    width:100%;
+    border-radius:15px;
+}
+
+.plan h2{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.plan ul{
+    list-style:none;
+}
+
+.plan li{
+    display:flex;
+    justify-content:space-between;
+    padding:12px 0;
+    border-bottom:1px solid #444;
+}
+
+@media(max-width:900px){
+
+.service-grid{
+grid-template-columns:1fr;
+}
+
+.plan-wrapper{
+flex-direction:column;
+}
+
+.hero-content h1{
+font-size:55px;
+}
+
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<nav>
+<div class="logo">GLASSHAVEN</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="plan.html">House Plan</a></li>
+</ul>
+</nav>
+
+<div class="card plan">
+
+<div class="plan-wrapper">
+
+<div class="plan-text">
+
+<h2>HOUSE PLAN</h2>
+
+<ul>
+<li><span>Living Room</span><span>21m²</span></li>
+<li><span>Dining Room</span><span>9.3m²</span></li>
+<li><span>Studio Kitchen</span><span>9.6m²</span></li>
+<li><span>TV Lounge</span><span>9m²</span></li>
+<li><span>Master Bedroom</span><span>15.6m²</span></li>
+<li><span>Guest Bedroom</span><span>11.1m²</span></li>
+<li><span>Bathroom</span><span>8.9m²</span></li>
+</ul>
+
+</div>
+
+<div class="plan-img">
+<img src="assests/5.webp">
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
